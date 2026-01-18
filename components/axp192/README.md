@@ -1,6 +1,10 @@
-Example yaml file
+# AXP192 Power System Management
 
-```
+## ESPHome config file
+
+### M5Stack Core2
+
+```yaml
 substitutions:
   friendly_name: "AXP192_test" #Core2
   esphome_name: "axp192test"
