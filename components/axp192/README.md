@@ -180,14 +180,14 @@ output:
     max_voltage: 3500
 
   - platform: axp192
-    channel: DLDO3
-    id: vibration_motor
-    voltage: 3300
-
-  - platform: axp192
     channel: DLDO2
     id: lcd_power
     voltage: 3000
+
+  - platform: axp192
+    channel: DLDO3
+    id: vibration_motor
+    voltage: 3300
 
 touchscreen:
   - platform: ft63x6
