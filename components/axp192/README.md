@@ -101,18 +101,38 @@ sensor:
       name: "USB Voltage"
     usb_current:
       name: "USB Current"
+      unit_of_measurement: "mA"
+      device_class: "current"
+      state_class: "measurement"
+      filters:
+        - multiply: 1000
     vbus_voltage:
       name: "VBus Voltage"
     vbus_current:
       name: "VBus Current"
+      unit_of_measurement: "mA"
+      device_class: "current"
+      state_class: "measurement"
+      filters:
+        - multiply: 1000
     internal_temperature:
       name: "Int Temp"
     battery_power:
       name: "Battery Power"
     battery_charge_current:
       name: "Batt Charge I"
+      unit_of_measurement: "mA"
+      device_class: "current"
+      state_class: "measurement"
+      filters:
+        - multiply: 1000
     battery_discharge_current:
       name: "Batt Discharge I"
+      unit_of_measurement: "mA"
+      device_class: "current"
+      state_class: "measurement"
+      filters:
+        - multiply: 1000
     aps_voltage:
       name: "APS Voltage"
     battery_charging:
