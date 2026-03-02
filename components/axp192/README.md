@@ -226,9 +226,7 @@ light:
     output: lcd_backlight_output
     restore_mode: ALWAYS_ON #Always want to have a backlight on when we boot up
     default_transition_length: 250ms
-  - platform: binary
-    name: "Vibration"
-    output: vibration_motor
+
   - platform: binary
     name: "LCD Power"
     output: lcd_power
@@ -238,7 +236,9 @@ switch:
   - platform: axp192
     led_pwr:
       name: "Green LED"
+
     vibration_motor:
       name: "Vibration Motor"
+      icon: "mdi:vibrate"
 
 ```
