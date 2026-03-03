@@ -24,14 +24,8 @@ api:
 
 wifi:
   networks:
-    - ssid: !secret wifi_comp_ssid
-      password: !secret wifi_comp_password
-    - ssid: !secret wifi_home_ssid
-      password: !secret wifi_home_password
-    - ssid: !secret wifi_phone_ssid
-      password: !secret wifi_phone_password
-    - ssid: !secret wifi_bshed_ssid
-      password: !secret wifi_bshed_password
+    - ssid: !secret wifi_ssid
+      password: !secret wifi_password
 
 # Enable logging
 logger:
